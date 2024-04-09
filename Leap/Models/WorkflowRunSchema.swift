@@ -16,6 +16,8 @@ public struct WorkflowRunSchema: Codable, JSONEncodable, Hashable {
         case completed = "completed"
         case running = "running"
         case failed = "failed"
+        case queued = "queued"
+        case cancelled = "cancelled"
     }
     public var id: String
     public var versionId: String
